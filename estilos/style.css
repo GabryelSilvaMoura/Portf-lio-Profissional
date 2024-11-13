@@ -1,0 +1,456 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #444;
+    padding: 15px 0px;
+    flex-flow: row wrap;
+}
+
+header > h1{
+    font-family: sans-serif;
+    color: white;
+}
+
+header > nav{
+background-color: transparent;
+width: auto;
+height: auto;
+}
+
+header > nav > ul{
+    height: auto;
+    width: auto;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+header > nav > ul > li{  
+    padding: 10px;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.2s;
+    
+}
+
+header > nav > ul > li > a:hover{
+    /* color: rgb(253, 66, 66); */
+    color: greenyellow;
+    border-bottom: 1px solid greenyellow;
+}
+
+
+/* Conteudo Principal */
+main{
+    background-color: #333;
+    /* background-color: #f3f3f3; */
+    height: auto;
+    width: 100%;
+}
+
+/* Banner 1 */
+#ban1{
+    background-color: skyblue;
+    background-image: url("../imagens/cidade.jpg");
+    height: auto;
+    background-position: center;
+    box-shadow: inset 3px 3px 3px black;
+}
+
+#ban1 > .som{
+    height: auto;
+    width: 100%;
+    background-color: #33333344;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#ban1 > .som > div > .per{
+    height: 350px;
+    width: 350px;
+    border-radius: 20px 0px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+#ban1 > .som > div > h4{
+    text-align: center;
+    color: white;
+}
+
+#ban1 > .som > .info{
+    background-color: rgba(0, 0, 0, 0.404);
+    margin: 30px 15px;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+#ban1 > .som > .info > h2{
+    color: white;
+    width: max-content;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 auto;
+    background-color: yellowgreen;
+}
+
+#ban1 > .som > .info > ul{
+    list-style-type: square;
+    
+}
+
+#ban1 > .som > .info > ul > li{
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Sessão Projetos */
+main > #pro{
+    width: 90%;
+    padding: 20px 0px;
+    background-color: #333;
+    margin: 0 auto;
+    box-shadow: 3px 0px 5px black;
+    height: auto;
+}
+
+main > #pro > h2{
+    padding: 10px 0px;
+    text-align: center;
+    color: white;
+}
+
+main > #pro > article{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+main > #pro > article > a > img{
+    height: 350px;
+    width: 320px;
+    margin: 5px;
+    object-fit: cover;
+    transition: all 0.8s ease-in-out;
+}
+
+main > #pro > article > a > img:hover{
+    transform: scale(1.5);
+    object-fit: contain;
+    z-index: 2;
+}
+
+main > #pro > article > a > .la{
+    width: 380px;
+}
+
+/* Sessão Designs */
+main > #des{
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+main > #des > div{
+    display: flex;
+    color: greenyellow;
+    border-bottom: 2px solid greenyellow;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > #des > div > a{
+    text-decoration: none;
+    color: white;
+    transition: ease-out 0.5s;
+}
+
+main > #des > div > a > h3{
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+main > #des > div > a > h3:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+main > #des > div > h2{
+    background-color: transparent;
+}
+
+main > #des > article{
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+main > #des > article > img{
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+}
+
+
+/* Sessão Certificados */
+main > #cer{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+main > #cer > h2{
+    text-align: center;
+    padding: 10px 0px;
+    color: black;
+}
+
+/* Sessão Certificados - Carrossel */
+.div-slider {
+    width: auto; 
+    height: 500px; 
+    text-align: center; 
+}
+
+.slides-front {
+    padding: 0; 
+    width: 980px;
+    height: 370px; 
+    display: block; 
+    margin: auto;
+    position: relative; 
+}
+
+.slides-front * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides-front input {
+    display: none;
+}
+
+.slide-container {
+    display: block; 
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 980px; 
+    height: 500px;
+    display: block; 
+    position: absolute; 
+    transform: scale(0); 
+    transition: all .7s ease-in-out 0.1s;
+}
+
+.slide img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.nav label {
+    width: 150px;
+    height: 100%; 
+    display: none; 
+    position: absolute;
+    opacity: 0; 
+    z-index: 9; 
+    cursor: pointer;
+    transition: opacity .2s;
+    color: rgb(255, 255, 255); 
+    font-size: 156pt;
+    text-align: center;
+    line-height: 480px; 
+    font-family: "Varela Round", sans-serif; 
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119); 
+}
+
+.slide:hover + .nav label {
+    opacity: 0.5; 
+}
+
+.nav label:hover {
+    opacity: 1; 
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked + .slide-container .slide {
+    opacity: 1; 
+    transform: scale(1); 
+    transition: opacity 1s ease-in-out 0.1s; 
+}
+
+input:checked + .slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px; 
+    height: 11px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: 450px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5  {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.efeito:hover {
+    cursor: pointer; 
+    transition-duration: 1s;
+    transform: scale(1.3, 1.3); 
+}
+
+
+/* Rodapé */
+footer{
+    padding: 20px 0px;
+    background-color: #333;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+}
+
+/* Sessão Formulario */
+footer > #for {
+    background-image: linear-gradient(to bottom, #333, rgb(53, 205, 50));
+}
+
+footer > #for > form{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.619);
+    height: auto;
+    width: 30rem;
+    padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin: 30px auto;
+}
+
+footer > #for > form > input{
+    margin: 10px 0px;
+    padding: 10px 5px;
+    border: none;
+}
+
+footer > #for >  form > div > #env, footer > #for > form > div > #res{
+    background-color: red;
+    width: auto;
+    border: none;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Sessão Contatos */
+footer > #con{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer > h2{
+    padding: 10px 0px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+footer > #con > .itens{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > #con > .itens > a{
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+
+footer > #con > .itens > a:hover{
+    transform: scale(1.1);
+}
+
+footer > #con > .itens > a > i{
+    font-size: 5em;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s ease;
+}
+
+footer > #con > .itens > a > i:hover{
+    color: rgb(53, 205, 50);
+}
+
+footer > #con > .itens > a > #git:hover{
+    color: rgb(251, 255, 4);
+}
+
+footer > #con > .itens > a > #inst:hover{
+    color: orangered;
+}
